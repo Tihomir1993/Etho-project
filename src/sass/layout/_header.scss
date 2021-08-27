@@ -1,0 +1,10 @@
+.site-header {
+  padding: .625em 0 .875em 0;
+
+  .site-header-inner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+}
