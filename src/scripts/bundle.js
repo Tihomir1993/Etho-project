@@ -1,13 +1,10 @@
-$('#zoomimg').mouseenter(function() 
-       {
-       
-          $(this).css("cursor","pointer");
-           $(this).animate({width: "50%", height: "50%"}, 'slow');
+function removeAnimation() {
+var animation =	document.querySelector(".overlay.is-animated");
+
+animation.classList.remove("is-animated");
+
+}
 
 
-       });
-    
-    $('#zoomimg').mouseleave(function()
-      {   
-          $(this).animate({width: "28%"}, 'slow');
-   });
+
+setTimeout(removeAnimation, 7000);

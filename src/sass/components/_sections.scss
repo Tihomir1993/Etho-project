@@ -1,29 +1,39 @@
 .section-welcome {
   background-image: url(../../../dist/images/bg-image.png);
+  background-repeat: round;
   width: 100%;
-  height: calc(100vh - 4.5em);
+  height: calc(100vh - 4.875em);
   position: relative;
+  overflow: hidden;
 
   .overlay {
     position: absolute;
-    width: 1005;
+    background-image: url(../../../dist/images/homeс.svg);
     width: 100%;
-    height: 100%;
-    background: white;
+    background-repeat: no-repeat;
+    height: calc(100vh - 4.875em);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    display: none;
+
+    &.is-animated {
+      display: block;
+      animation: scaleUP 8s;
+      animation-delay: 3s;
+    }
   }
 
-  .overlay-title {
 
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    display: block;
-    font-size: 33em;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%);
-    background-image: url(../../../dist/images/bg-image.png);
-    background-size: cover;
-    font-family: Montserrat;
+}
+
+@keyframes scaleUP {
+  from {
+    transform: scale(1);
+    top: 0;
+  }
+
+  to {
+    transform: scale(50.1);
   }
 }
