@@ -1,3 +1,7 @@
+.height-container {
+  height: 2000px;
+}
+
 .section-welcome {
   background-image: url(../../../dist/images/bg-image.png);
   background-repeat: round;
@@ -5,35 +9,40 @@
   height: calc(100vh - 4.875em);
   position: relative;
   overflow: hidden;
+  position: sticky;
+  top: 0;
 
   .overlay {
     position: absolute;
-    background-image: url(../../../dist/images/homeс.svg);
+    background-image: url(../../../dist/images/homeс1.svg), linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0) 35%, rgba(255, 255, 255, 1) 100%);
     width: 100%;
     background-repeat: no-repeat;
     height: calc(100vh - 4.875em);
     overflow: hidden;
     background-size: cover;
     background-position: center;
-    display: none;
 
-    &.is-animated {
-      display: block;
-      animation: scaleUP 8s;
-      animation-delay: 3s;
+    @media (max-width: 30em) {
+      background-image: url(../../../dist/images/homeс1.svg), linear-gradient(180deg, rgba(255, 255, 255, 1) 37%, rgba(255, 255, 255, 0) 35%, rgba(255, 255, 255, 1) 65%);
+      background-size: contain;
     }
-  }
 
+    // &.is-animated {
+    //   display: block;
+    //   animation: scaleUP 8s;
+    //   animation-delay: 3s;
+    // }
+  }
 
 }
 
-@keyframes scaleUP {
-  from {
-    transform: scale(1);
-    top: 0;
-  }
+// @keyframes scaleUP {
+//   from {
+//     transform: scale(1);
+//     top: 0;
+//   }
 
-  to {
-    transform: scale(50.1);
-  }
-}
+//   to {
+//     transform: scale(50.1);
+//   }
+// }
