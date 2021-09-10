@@ -6,7 +6,7 @@
   background-image: url(../../../dist/images/bg-image.png);
   background-repeat: round;
   width: 100%;
-  height: calc(100vh - 4.875em);
+  height: 100vh;
   position: relative;
   overflow: hidden;
   position: sticky;
@@ -17,7 +17,7 @@
     background-image: url(../../../dist/images/homeс1.svg), linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0) 35%, rgba(255, 255, 255, 1) 100%);
     width: 100%;
     background-repeat: no-repeat;
-    height: calc(100vh - 4.875em);
+    height: 100vh;
     overflow: hidden;
     background-size: cover;
     background-position: center;
@@ -46,3 +46,79 @@
 //     transform: scale(50.1);
 //   }
 // }
+
+.section-our-factory {
+  display: block;
+  padding: 8.125em 0;
+  overflow: hidden;
+
+  .row {
+    margin: 0;
+    padding: 0;
+  }
+
+  .slider-wrapper {
+    max-width: 90em;
+    overflow: hidden;
+
+    .slider {
+
+      max-width: 100em;
+      display: flex;
+      flex-direction: row-reverse;
+
+      .slide-img {
+        width: 360px;
+        margin: 0 1.25em;
+      }
+
+
+      .slide-img:first-child {
+        margin-right: 0;
+      }
+
+      .slide-img:last-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .slider-buttons {
+
+    .arrow-left,
+    .arrow-right {
+      display: inline-block;
+      padding: 1em;
+      border-radius: 10em;
+      background-color: #E6ECE6;
+      cursor: pointer;
+
+      &:hover {
+        background: #FFD100;
+      }
+    }
+  }
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 6em 0;
+}
+
+.section-heading {
+  max-width: 48em;
+  text-align: right;
+  font-family: Montserat;
+
+  header.section-heading {
+    max-width: 48em;
+    text-align: right;
+    font-family: Montserat;
+  }
+
+  .heading-title {
+    font-size: 3.875em;
+    margin: 0
+  }
+}
