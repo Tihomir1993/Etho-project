@@ -1,6 +1,14 @@
 body {
-  .row {
-    max-width: 111.5em;
-    padding: 0 1.25em;
-  }
+    .row-header {
+        max-width: 111.5em;
+        padding: 0 1.25em;
+        margin: 0 auto;
+    }
+    .row {
+        max-width: 70em;
+        margin: 0 auto;
+    }
+    .row-reverse {
+        flex-direction: row-reverse;
+    }
 }
